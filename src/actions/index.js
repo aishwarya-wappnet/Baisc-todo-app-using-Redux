@@ -20,3 +20,14 @@ export const removeTodo = () => {
         type: "REMOVE_TODO",
     }
 }
+
+export const editTodoItem = ({id, data}) => {
+    console.log(data);
+    return {
+        type: "UPDATE_TODO",
+        payload: {
+            id: id,
+            data
+        }
+    }
+}
